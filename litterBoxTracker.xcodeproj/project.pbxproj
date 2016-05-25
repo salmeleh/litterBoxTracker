@@ -99,10 +99,10 @@
 		2088C6DD1CF52ED5005FF952 /* litterBoxTracker */ = {
 			isa = PBXGroup;
 			children = (
-				2088C6DE1CF52ED5005FF952 /* AppDelegate.swift */,
-				2088C6E01CF52ED5005FF952 /* ViewController.swift */,
 				2088C6E21CF52ED5005FF952 /* Main.storyboard */,
+				2088C6E01CF52ED5005FF952 /* ViewController.swift */,
 				2088C6E81CF52ED5005FF952 /* Assets.xcassets */,
+				2088C6DE1CF52ED5005FF952 /* AppDelegate.swift */,
 				2088C6EA1CF52ED5005FF952 /* LaunchScreen.storyboard */,
 				2088C6ED1CF52ED5005FF952 /* Info.plist */,
 				2088C6E51CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld */,
@@ -488,6 +488,7 @@
 				2088C7081CF52ED5005FF952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2088C7091CF52ED5005FF952 /* Build configuration list for PBXNativeTarget "litterBoxTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				2088C70B1CF52ED5005FF952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2088C70C1CF52ED5005FF952 /* Build configuration list for PBXNativeTarget "litterBoxTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				2088C70E1CF52ED5005FF952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
