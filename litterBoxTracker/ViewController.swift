@@ -15,15 +15,49 @@ class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var displayTimeLabel: UILabel!
     
+    var objects: [Event]!
+
+    
     var startTime = NSTimeInterval()
     var timer = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        objects = fetchAllEvents()
+        
         imageView.image = UIImage(named: "test")
     }
 
+    
+    //MARK: Core Data
+    lazy var sharedContext: NSManagedObjectContext = {
+        return CoreDataStackManager.sharedInstance().managedObjectContext
+    }()
+    
+    func fetchAllEvents() -> [Event] {
+        // Create the Fetch Request
+        let fetchRequest = NSFetchRequest(entityName: "Event")
+        
+        // Execute the Fetch Request
+        do {
+            return try sharedContext.executeFetchRequest(fetchRequest) as! [Event]
+        } catch _ {
+            return [Event]()
+        }
+    }
+    
+    func insertNewObject(sender: AnyObject) {
+        objects.insert(Event(context: sharedContext), atIndex: 0)
+        //let indexPath = NSIndexPath(forRow: 0, inSection: 0)
+        //self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        
+        CoreDataStackManager.sharedInstance().saveContext()
+    }
+    
+    
+    
+    
 
     @IBAction func startButtonPressed(sender: AnyObject) {
         if (!timer.valid) {
@@ -38,6 +72,12 @@ class ViewController: UIViewController {
         let currentTime = NSDate.timeIntervalSinceReferenceDate()
 
         var elapsedTime: NSTimeInterval = currentTime - startTime
+        
+        //
+        ///
+        ////add logic for updating the imageView based on elapsed time
+        ///
+        //
         
         let days = UInt8(elapsedTime / 86400.0)
         elapsedTime -= (NSTimeInterval(days) * 86400.0)
@@ -60,10 +100,7 @@ class ViewController: UIViewController {
         
         //concatenate times for the UILabel
         displayTimeLabel.text = "\(strDays):\(strHours):\(strMinutes):\(strSeconds)"
-        
-        if (seconds == 10) {
-            launchAlertController("10 seconds")
-        }
+
         
     }
     

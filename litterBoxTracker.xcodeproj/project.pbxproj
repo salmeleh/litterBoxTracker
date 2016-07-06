@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200915DC1D2D478000C1F2A3 /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200915DB1D2D478000C1F2A3 /* CoreDataStackManager.swift */; };
+		200915E01D2D47EC00C1F2A3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200915DF1D2D47EC00C1F2A3 /* Event.swift */; };
 		2088C6DF1CF52ED5005FF952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088C6DE1CF52ED5005FF952 /* AppDelegate.swift */; };
 		2088C6E11CF52ED5005FF952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088C6E01CF52ED5005FF952 /* ViewController.swift */; };
 		2088C6E41CF52ED5005FF952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2088C6E21CF52ED5005FF952 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200915DB1D2D478000C1F2A3 /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
+		200915DF1D2D47EC00C1F2A3 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		2088C6DB1CF52ED5005FF952 /* litterBoxTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = litterBoxTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2088C6DE1CF52ED5005FF952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2088C6E01CF52ED5005FF952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,11 +105,13 @@
 			children = (
 				2088C6E21CF52ED5005FF952 /* Main.storyboard */,
 				2088C6E01CF52ED5005FF952 /* ViewController.swift */,
-				2088C6E81CF52ED5005FF952 /* Assets.xcassets */,
+				200915DF1D2D47EC00C1F2A3 /* Event.swift */,
+				2088C6E51CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld */,
+				200915DB1D2D478000C1F2A3 /* CoreDataStackManager.swift */,
 				2088C6DE1CF52ED5005FF952 /* AppDelegate.swift */,
 				2088C6EA1CF52ED5005FF952 /* LaunchScreen.storyboard */,
 				2088C6ED1CF52ED5005FF952 /* Info.plist */,
-				2088C6E51CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld */,
+				2088C6E81CF52ED5005FF952 /* Assets.xcassets */,
 			);
 			path = litterBoxTracker;
 			sourceTree = "<group>";
@@ -260,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2088C6E71CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld in Sources */,
+				200915DC1D2D478000C1F2A3 /* CoreDataStackManager.swift in Sources */,
 				2088C6E11CF52ED5005FF952 /* ViewController.swift in Sources */,
 				2088C6DF1CF52ED5005FF952 /* AppDelegate.swift in Sources */,
+				200915E01D2D47EC00C1F2A3 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
