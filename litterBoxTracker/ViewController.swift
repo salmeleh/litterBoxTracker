@@ -9,9 +9,12 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var displayTimeLabel: UILabel!
     
@@ -23,6 +26,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         objects = fetchAllEvents()
         
@@ -61,6 +65,8 @@ class ViewController: UIViewController {
 
     @IBAction func startButtonPressed(sender: AnyObject) {
         if (!timer.valid) {
+            objects.insert(Event(context: sharedContext), atIndex: 0)
+            
             let aSelector : Selector = "updateTime"
             timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: aSelector, userInfo: nil, repeats: true)
             startTime = NSDate.timeIntervalSinceReferenceDate()
@@ -103,6 +109,32 @@ class ViewController: UIViewController {
 
         
     }
+    
+    
+    
+    // MARK: - Table View
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return objects.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        
+        let object = objects[indexPath.row] as Event
+        cell.textLabel!.text = object.timeStamp.description
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+
+    
     
     
     
