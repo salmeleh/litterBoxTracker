@@ -20,6 +20,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var objects: [Event]!
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
     
     var startTime = NSTimeInterval()
     var timer = NSTimer()
