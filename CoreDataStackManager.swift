@@ -17,7 +17,7 @@ import CoreData
  *
  */
 
-private let SQLITE_FILE_NAME = "LitterBoxTracker.sqlite"
+private let SQLITE_FILE_NAME = "litterBoxTracker.sqlite"
 
 class CoreDataStackManager {
     
