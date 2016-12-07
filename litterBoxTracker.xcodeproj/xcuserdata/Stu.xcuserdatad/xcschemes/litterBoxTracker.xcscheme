@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
                BlueprintIdentifier = "2088C6DA1CF52ED5005FF952"
                BuildableName = "litterBoxTracker.app"
                BlueprintName = "litterBoxTracker"
-               ReferencedContainer = "container:litterBoxTracker.xcodeproj">
+               ReferencedContainer = "container:../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Apps/litterBoxTracker/litterBoxTracker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "2088C6F11CF52ED5005FF952"
                BuildableName = "litterBoxTrackerTests.xctest"
                BlueprintName = "litterBoxTrackerTests"
-               ReferencedContainer = "container:litterBoxTracker.xcodeproj">
+               ReferencedContainer = "container:../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Apps/litterBoxTracker/litterBoxTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "2088C6FC1CF52ED5005FF952"
                BuildableName = "litterBoxTrackerUITests.xctest"
                BlueprintName = "litterBoxTrackerUITests"
-               ReferencedContainer = "container:litterBoxTracker.xcodeproj">
+               ReferencedContainer = "container:../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Apps/litterBoxTracker/litterBoxTracker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "2088C6DA1CF52ED5005FF952"
             BuildableName = "litterBoxTracker.app"
             BlueprintName = "litterBoxTracker"
-            ReferencedContainer = "container:litterBoxTracker.xcodeproj">
+            ReferencedContainer = "container:../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Apps/litterBoxTracker/litterBoxTracker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "2088C6DA1CF52ED5005FF952"
             BuildableName = "litterBoxTracker.app"
             BlueprintName = "litterBoxTracker"
-            ReferencedContainer = "container:litterBoxTracker.xcodeproj">
+            ReferencedContainer = "container:../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Apps/litterBoxTracker/litterBoxTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "2088C6DA1CF52ED5005FF952"
             BuildableName = "litterBoxTracker.app"
             BlueprintName = "litterBoxTracker"
-            ReferencedContainer = "container:litterBoxTracker.xcodeproj">
+            ReferencedContainer = "container:../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Apps/litterBoxTracker/litterBoxTracker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

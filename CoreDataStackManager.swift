@@ -75,7 +75,7 @@ class CoreDataStackManager {
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent(SQLITE_FILE_NAME)
 
-        print("sqlite path: \(url.path!)")
+        print("sqlite path: \(url!.path!)")
 
         do {
             try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)

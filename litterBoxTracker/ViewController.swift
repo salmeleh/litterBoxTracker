@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             CoreDataStackManager.sharedInstance().saveContext()
             
             
-            let aSelector : Selector = "updateTime"
+            let aSelector : Selector = #selector(ViewController.updateTime)
             timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: aSelector, userInfo: nil, repeats: true)
             startTime = NSDate.timeIntervalSinceReferenceDate()
         }
