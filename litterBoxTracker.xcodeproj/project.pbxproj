@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		200915E01D2D47EC00C1F2A3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200915DF1D2D47EC00C1F2A3 /* Event.swift */; };
-		20435A7C1D469CB500EBEA53 /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20435A7B1D469CB500EBEA53 /* CoreDataStackManager.swift */; };
 		2088C6DF1CF52ED5005FF952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088C6DE1CF52ED5005FF952 /* AppDelegate.swift */; };
 		2088C6E11CF52ED5005FF952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088C6E01CF52ED5005FF952 /* ViewController.swift */; };
 		2088C6E41CF52ED5005FF952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2088C6E21CF52ED5005FF952 /* Main.storyboard */; };
-		2088C6E71CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2088C6E51CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld */; };
 		2088C6E91CF52ED5005FF952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2088C6E81CF52ED5005FF952 /* Assets.xcassets */; };
 		2088C6EC1CF52ED5005FF952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2088C6EA1CF52ED5005FF952 /* LaunchScreen.storyboard */; };
 		2088C6F71CF52ED5005FF952 /* litterBoxTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088C6F61CF52ED5005FF952 /* litterBoxTrackerTests.swift */; };
@@ -38,12 +36,10 @@
 
 /* Begin PBXFileReference section */
 		200915DF1D2D47EC00C1F2A3 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		20435A7B1D469CB500EBEA53 /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStackManager.swift; path = ../CoreDataStackManager.swift; sourceTree = "<group>"; };
 		2088C6DB1CF52ED5005FF952 /* litterBoxTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = litterBoxTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2088C6DE1CF52ED5005FF952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2088C6E01CF52ED5005FF952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2088C6E31CF52ED5005FF952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2088C6E61CF52ED5005FF952 /* litterBoxTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = litterBoxTracker.xcdatamodel; sourceTree = "<group>"; };
 		2088C6E81CF52ED5005FF952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2088C6EB1CF52ED5005FF952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2088C6ED1CF52ED5005FF952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,8 +102,6 @@
 				2088C6E21CF52ED5005FF952 /* Main.storyboard */,
 				2088C6E01CF52ED5005FF952 /* ViewController.swift */,
 				200915DF1D2D47EC00C1F2A3 /* Event.swift */,
-				2088C6E51CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld */,
-				20435A7B1D469CB500EBEA53 /* CoreDataStackManager.swift */,
 				2088C6DE1CF52ED5005FF952 /* AppDelegate.swift */,
 				2088C6EA1CF52ED5005FF952 /* LaunchScreen.storyboard */,
 				2088C6ED1CF52ED5005FF952 /* Info.plist */,
@@ -268,10 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2088C6E71CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld in Sources */,
 				2088C6E11CF52ED5005FF952 /* ViewController.swift in Sources */,
 				2088C6DF1CF52ED5005FF952 /* AppDelegate.swift in Sources */,
-				20435A7C1D469CB500EBEA53 /* CoreDataStackManager.swift in Sources */,
 				200915E01D2D47EC00C1F2A3 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,19 +523,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2088C6E51CF52ED5005FF952 /* litterBoxTracker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2088C6E61CF52ED5005FF952 /* litterBoxTracker.xcdatamodel */,
-			);
-			currentVersion = 2088C6E61CF52ED5005FF952 /* litterBoxTracker.xcdatamodel */;
-			path = litterBoxTracker.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2088C6D31CF52ED5005FF952 /* Project object */;
 }

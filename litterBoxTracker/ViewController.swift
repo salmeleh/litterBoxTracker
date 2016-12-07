@@ -32,48 +32,48 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
-        objects = fetchAllEvents()
+        //objects = fetchAllEvents()
         
         imageView.image = UIImage(named: "test")
     }
 
     
-    //MARK: Core Data
-    lazy var sharedContext: NSManagedObjectContext = {
-        return CoreDataStackManager.sharedInstance().managedObjectContext
-    }()
-    
-    func fetchAllEvents() -> [Event] {
-        // Create the Fetch Request
-        let fetchRequest = NSFetchRequest(entityName: "Event")
-        
-        // Execute the Fetch Request
-        do {
-            return try sharedContext.executeFetchRequest(fetchRequest) as! [Event]
-        } catch _ {
-            return [Event]()
-        }
-    }
-    
-    func insertNewObject(sender: AnyObject) {
-        objects.insert(Event(context: sharedContext), atIndex: 0)
-        //let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-        //self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-        
-        CoreDataStackManager.sharedInstance().saveContext()
-    }
-    
+//    //MARK: Core Data
+//    lazy var sharedContext: NSManagedObjectContext = {
+//        return CoreDataStackManager.sharedInstance().managedObjectContext
+//    }()
+//    
+//    func fetchAllEvents() -> [Event] {
+//        // Create the Fetch Request
+//        let fetchRequest = NSFetchRequest(entityName: "Event")
+//        
+//        // Execute the Fetch Request
+//        do {
+//            return try sharedContext.executeFetchRequest(fetchRequest) as! [Event]
+//        } catch _ {
+//            return [Event]()
+//        }
+//    }
+//    
+//    func insertNewObject(sender: AnyObject) {
+//        objects.insert(Event(context: sharedContext), atIndex: 0)
+//        //let indexPath = NSIndexPath(forRow: 0, inSection: 0)
+//        //self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+//        
+//        CoreDataStackManager.sharedInstance().saveContext()
+//    }
+//    
     
     
     
 
     @IBAction func startButtonPressed(sender: AnyObject) {
         if (!timer.valid) {
-            objects.insert(Event(context: sharedContext), atIndex: 0)
+            //objects.insert(Event(context: sharedContext), atIndex: 0)
             let indexPath = NSIndexPath(forRow: 0, inSection: 0)
             self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             
-            CoreDataStackManager.sharedInstance().saveContext()
+            //CoreDataStackManager.sharedInstance().saveContext()
             
             
             let aSelector : Selector = #selector(ViewController.updateTime)
